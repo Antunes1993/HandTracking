@@ -24,6 +24,8 @@ volume = cast(interface, POINTER(IAudioEndpointVolume))
 volRange = volume.GetVolumeRange()
 minVol = volRange[0]
 maxVol = volRange[1]
+volBar = 400
+vol = 0
 ###############################################################
 
 while True:
@@ -49,8 +51,13 @@ while True:
 
         #Hand range - 11 to 140
         #Volume Range -65 - 0
-        vol = np.interp(length, [11,140], [minVol, maxVol])
+        vol = np.interp(length, [11,110], [minVol, maxVol])
+        volBar = np.interp(length, [11,110], [400, 150])
         volume.SetMasterVolumeLevel(vol, None)
+
+
+    cv2.rectangle(frame, (50, 150), (85, 400), (255, 100, 50), 3)
+    cv2.rectangle(frame, (50, int(volBar)), (85, 400), (255, 0, 0), cv2.FILLED)
 
     cv2.imshow("Frame", frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
