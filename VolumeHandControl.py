@@ -40,11 +40,11 @@ while True:
         cx,cy = (x1+x2)//2, (y1+y2)//2
 
 
-        cv2.circle(frame, (x1,y1), 10, (255, 0, 150), cv2.FILLED)
-        cv2.circle(frame, (x2,y2), 10, (255, 0, 150), cv2.FILLED)
-        cv2.circle(frame, (cx,cy), 5, (255, 0, 150), cv2.FILLED)
+        cv2.circle(frame, (x1,y1), 10, (0, 255, 0), cv2.FILLED)
+        cv2.circle(frame, (x2,y2), 10, (0, 255, 0), cv2.FILLED)
+        cv2.circle(frame, (cx,cy), 5, (0, 255, 0), cv2.FILLED)
 
-        cv2.line(frame, (x1,y1), (x2,y2), (255, 0, 150), 2)
+        cv2.line(frame, (x1,y1), (x2,y2), (0, 255, 0), 2)
 
         length = round(math.hypot(x2-x1, y2-y1))
         cv2.putText(frame, str(length), (10,30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 150), 2)
