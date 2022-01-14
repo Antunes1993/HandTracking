@@ -12,3 +12,11 @@ HandtrackingBasics.py - Basic implementation and tests with media pipe. <br/>
 HandtrackingModule.py - Creation of a python module using media pipe hand detector in order to be used in other projects. <br/>
 Volume Hand Control.py - Increase or decrease notebook's volume sound according with the distance of first finger and thumb. <br/>
 Finger Counting.py - Detecs the number of showed fingers and display corresponding images. <br/>
+
+# Results example
+<a target="_blank"><img src="https://github.com/Antunes1993/HandTracking/blob/main/results/result1.png" target="_blank" width=500></a>  
+<a target="_blank"><img src="https://github.com/Antunes1993/HandTracking/blob/main/results/result3.png" target="_blank" width=500></a>  
+
+# Future work intentions
+Control notebook mouse with finger. <br />
+Translate signals language into audio. <br />
