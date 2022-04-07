@@ -3,10 +3,8 @@ import cv2
 import math
 import time 
 import numpy as np
-import HandTrackingModule as htm
+from modules import HandTrackingModule as htm
 from ctypes import cast, POINTER
-from comtypes import CLSCTX_ALL
-from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
 
 
 folderPath = "FingersImg"
@@ -75,4 +73,3 @@ while(True):
 
 capture.release()
 cv2.destroyAllWindows()
-

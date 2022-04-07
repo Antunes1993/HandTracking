@@ -2,10 +2,11 @@ import cv2
 import math
 import time 
 import numpy as np
-import HandTrackingModule as htm
+from modules import HandTrackingModule as htm
 from ctypes import cast, POINTER
 from comtypes import CLSCTX_ALL
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
+
 
 ###############################################################
 wCam, hCam = 640, 480
@@ -59,7 +60,7 @@ while True:
     cv2.rectangle(frame, (50, 150), (85, 400), (255, 100, 50), 3)
     cv2.rectangle(frame, (50, int(volBar)), (85, 400), (255, 0, 0), cv2.FILLED)
 
-    cv2.imshow("Frame", frame)
+    #cv2.imshow("Frame", frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
