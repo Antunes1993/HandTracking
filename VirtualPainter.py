@@ -81,13 +81,13 @@ while True:
 
     #Painel de cores
     cv2.rectangle(frame, (100,50), (300,100), (255,0,0), 2)
-    cv2.putText(frame, "Azul", (110,80), cv2.FONT_HERSHEY_SIMPLEX, 1, (255,0,0), 3)
+    cv2.putText(frame, "Destacar", (110,80), cv2.FONT_HERSHEY_SIMPLEX, 1, (255,0,0), 3)
     cv2.rectangle(frame, (100,120), (300,170), (0,255,0), 2)
-    cv2.putText(frame, "Verde", (110,150), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255,0), 3)
+    cv2.putText(frame, "Ligar", (110,150), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255,0), 3)
     cv2.rectangle(frame, (100,190), (300,240), (0,0,255), 2)
-    cv2.putText(frame, "Vermelho", (110,220), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 3)
+    cv2.putText(frame, "Desligar", (110,220), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 3)
     cv2.rectangle(frame, (100,260), (300,310), (0,0,0), 2)
-    cv2.putText(frame, "Preto", (110,290), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 3)
+    cv2.putText(frame, "Apagar", (110,290), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 3)
     
     #frame = cv2.addWeighted(frame, 0.5, imgCanvas, 0.5, 0)
 

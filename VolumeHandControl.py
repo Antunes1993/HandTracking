@@ -60,7 +60,7 @@ while True:
     cv2.rectangle(frame, (50, 150), (85, 400), (255, 100, 50), 3)
     cv2.rectangle(frame, (50, int(volBar)), (85, 400), (255, 0, 0), cv2.FILLED)
 
-    #cv2.imshow("Frame", frame)
+    cv2.imshow("Frame", frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
